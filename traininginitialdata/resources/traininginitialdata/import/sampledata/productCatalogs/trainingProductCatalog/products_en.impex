@@ -1,0 +1,28 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2018 SAP SE or an SAP affiliate company.  All rights reserved.
+#
+# This software is the confidential and proprietary information of SAP
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with SAP.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Product Localisations
+ 
+# Macros / Replacement Parameter definitions
+$productCatalog=trainingProductCatalog
+$productCatalogName=Training Product Catalog
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+# Language
+$lang=en
+
+# Update allProducts with localisations
+UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
+;0001;;MEN;GEN 4 SMARTWATCH - Q VENTURE HR SMOKE STAINLESS STEEL;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0011;;WOMEN;HYBRID SMARTWATCH - FOSSIL X MOVEMBER BROWN LEATHER;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0021;;SMARTWATCHES;GEN 4 SMARTWATCH - Q VENTURE HR BLUSH LEATHER;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0031;;WALLETS;LOGAN RFID ZIP AROUND CLUTCH;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0041;;JEWELRY;HEART ROSE GOLD-TONE STAINLESS STEEL NECKLACE;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
