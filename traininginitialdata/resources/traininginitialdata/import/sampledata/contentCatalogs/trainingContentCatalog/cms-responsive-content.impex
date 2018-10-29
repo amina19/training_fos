@@ -44,38 +44,13 @@ INSERT_UPDATE CMSLinkComponent                     ; $contentCV[unique=true]    
                                                    ; 							; SmartwatchCategoryLink							;Smartwatch Link                                                                                                                                                                                              ; /Store-Catalogue/Men/c/smartwatches                                                                                                                                                                                                                 ; SmartwatchCategoryLink                                                                                                                                                              ; SmartwatchCategoryLink                      ;                                             ;                                             ;  				
                                                    ;							;WalletCategoryLink									;Wallet Link                                                                                                                                                                                                  ; /Store-Catalogue/Men/c/wallets                                                                                                                                                                                                                 ; WalletCategoryLink                                                                                                                                                              ; WalletCategoryLink                      ;                                             ;                                             ;  
                                               	   ;							;JewelryCategoryLink								;Jewelry Link                                                                                                                                                                                                  ; /Store-Catalogue/Men/c/jewelry                                                                                                                                                                                                             ; JewelryCategoryLink                                                                                                                                                              ; JewelryCategoryLink                      ;                                             ;                                             ;      
-                                                   
-                                                   
-                                                   
- ;;AboutAcceleratorLink;About Accelerator Link;"http://www.hybris.com/multichannel-accelerator";AboutAcceleratorLink;AboutAcceleratorLink;newWindow;;;
-;;StoreFinderLink;Store Finder Link;/store-finder;StoreFinderLink;StoreFinderLink;;;;
-;;LoginLink;Login Link;/login;LoginLink;LoginLink;;;;
-;;DocumentationLink;Documentation Link;"https://wiki.hybris.com/display/release5/Release+5+Documentation+Home";DocumentationLink;DocumentationLink;newWindow;;;
-;;AboutHybrisLink;About Hybris Link;"http://www.hybris.com";AboutHybrisLink;AboutHybrisLink;newWindow;;;
-;;ContactUsLink;Contact Us Link;"http://www.hybris.com/contact";ContactUsLink;ContactUsLink;newWindow;;;
-;;FacebookLink;Facebook Link;"http://www.facebook.com/hybrissoftware";FacebookLink;FacebookLink;newWindow;;;
-;;TwitterLink;Twitter Link;"http://twitter.com/#!/hybris_software";TwitterLink;TwitterLink;newWindow;;;
-;;AgileCommerceBlogLink;Agile Commerce Blog Link;"http://www.agile-commerce.com/";AgileCommerceBlogLink;AgileCommerceBlogLink;newWindow;;;
-;;LinkedInLink;Linked In Link;"http://www.linkedin.com/company/97435";LinkedInLink;LinkedInLink;newWindow;;;
-;;FAQLink;FAQ Link;/faq;FAQLink;FAQLin;;;;
-;;TermsAndConditionsLink;Terms and Conditions Link;/termsAndConditions;TermsAndConditionsLink;TermsAndConditionsLink;;;;
-;;AccountHomeLink;Account Home Link;/my-account;AccountHomeLink;AccountHomeLink;;;;
-;;AccountProfileLink;AccountProfileLink;/my-account/profile;AccountProfileLink;AccountProfileLink;;;;
-;;AccountPersonalDetailsLink;AccountPersonalDetailsLink;/my-account/profile;AccountPersonalDetailsLink;AccountPersonalDetailsLink;;;;
-;;AccountUpdatePasswordLink;AccountUpdatePasswordLink;/my-account/update-password;AccountUpdatePasswordLink;AccountUpdatePasswordLink;;;;
-;;AccountAddressBookLink;AccountAddressBookLink;/my-account/address-book;AccountAddressBookLink;AccountAddressBookLink;;;;
-;;AccountManageAddressLink;AccountManageAddressLink;/my-account/address-book;AccountManageAddressLink;AccountManageAddressLink;;;;
-;;AccountPaymentDetailsLink;AccountPaymentDetailsLink;/my-account/payment-details;AccountPaymentDetailsLink;AccountPaymentDetailsLink;;;;
-;;AccountManagePaymentDetailsLink;AccountManagePaymentDetailsLink;/my-account/payment-details;AccountManagePaymentDetailsLink;AccountManagePaymentDetailsLink;;;;
-;;AccountOrderHistoryLink;AccountOrderHistoryLink;/my-account/orders;AccountOrderHistoryLink;AccountOrderHistoryLink;;;;
-;;AccountViewOrderHistoryLink;AccountViewOrderHistoryLink;/my-account/orders;AccountViewOrderHistoryLink;AccountViewOrderHistoryLink;;;;
+                                                  
   
   
 # Lightbox Banner for Mini Cart
 INSERT_UPDATE SimpleBannerComponent                ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; &componentRef                                                                                                                                                                                                                                ; urlLink
                                                    ;                            ; LightboxHomeDeliveryBannerComponent                  ; Lightbox Home Delivery Banner Component                                                                                                                                                                        ; LightboxHomeDeliveryBannerComponent                                                                                                                                                                                                          ;
                                                    ;                            ; NextDayDeliveryBanner                                ; Next Day Delivery Banner                                                                                                                                                                                       ; NextDayDeliveryBanner
- ;;HomepageBannerComponent
   
 # CMS Mini Cart Component
 INSERT_UPDATE MiniCartComponent                    ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; &componentRef                                                                                                                                                                                                                                ; totalDisplay(code)                                                                                                                                                               ; shownProductCount                        ; lightboxBannerComponent(&componentRef)
@@ -88,130 +63,56 @@ INSERT_UPDATE NavigationBarComponent               ; $contentCV[unique=true]    
                                                    ;                            ; SmartwatchBarComponent                                    ; Smartwatch Bar Component                                                                                                                                                                                            ; 10                                                                                                                                                                                                                                           ; SmartwatchCategoryLink                                                                                                                                                                ;                                          ; SmartwatchBarComponent
                                                    ;                            ; WalletBarComponent                                    ; Wallet Bar Component                                                                                                                                                                                            ; 10                                                                                                                                                                                                                                           ; WalletCategoryLink                                                                                                                                                                ;                                          ; WalletBarComponent
                                                    ;                            ; JewelryBarComponent                                    ; Jewelry Bar Component                                                                                                                                                                                            ; 10                                                                                                                                                                                                                                           ; JewelryCategoryLink                                                                                                                                                                ;                                          ; JewelryBarComponent
-                                                   
 
-# Navigation Bar Component
-INSERT_UPDATE AccountNavigationComponent;$contentCV[unique=true];uid[unique=true];name;navigationNode(&nodeRef);styleClass;&componentRef
-;;AccountLeftNavigationComponent;Account Left Navigation Component;AccountLeftNavNode;;AccountLeftNavigationComponent
-;;AccountProfileNavigationComponent;Account Profile Navigation Component;AccountProfileNavNode;;AccountProfileNavigationComponent
-;;AccountAddressBookNavigationComponent;Account Address Book NavigationComponent;AccountAddressBookNavNode;;AccountAddressBookNavigationComponent
-;;AccountPaymentDetailsNavigationComponent;Account Payment Details Navigation Component;AccountPaymentDetailsNavNode;;AccountPaymentDetailsNavigationComponent
-;;AccountOrderHistoryNavigationComponent;Account Order History Navigation Component;AccountOrderHistoryNavNode;;AccountOrderHistoryNavigationComponent
-# Account Navigation Bar Component
-INSERT_UPDATE AccountNavigationCollectionComponent;$contentCV[unique=true];uid[unique=true];name;components(uid, $contentCV);&componentRef
-;;AccountHomepageComponent;Account Homepage Component;AccountProfileNavigationComponent,AccountAddressBookNavigationComponent,AccountPaymentDetailsNavigationComponent,AccountOrderHistoryNavigationComponent;AccountHomepageComponent
-# Navigation Collection
-INSERT_UPDATE NavigationBarCollectionComponent;$contentCV[unique=true];uid[unique=true];name;components(uid, $contentCV);&componentRef
-;;NavBarComponent;Navigation Bar Collection Component;MenBarComponent,WomenBarComponent,SmartwatchBarComponent,WalletBarComponent,JewelryBarComponent;NavBarComponent
-# CMS tabs components
-INSERT_UPDATE CMSTabParagraphComponent             ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; visible                                                                                                                                                                                                                                      ; &componentRef
-                                                   ;                            ; deliveryTab                                          ; Delivery tab                                                                                                                                                                                                   ; true                                                                                                                                                                                                                                         ; deliveryTab
-  
-INSERT_UPDATE CMSTabParagraphContainer             ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; visible                                                                                                                                                                                                                                      ; simpleCMSComponents(uid, $contentCV)                                                                                                                                             ; &componentRef
-                                                   ;                            ; TabPanelContainer                                    ; Tab container                                                                                                                                                                                                  ; true                                                                                                                                                                                                                                         ; deliveryTab                                                                                                                                                                      ; TabPanelContainer
-  
-# CMS Footer Component
-INSERT_UPDATE FooterComponent                      ; $contentCV[unique=true]    ; uid[unique=true]                                     ; wrapAfter                                                                                                                                                                                                      ; &componentRef
-                                                   ;                            ; FooterComponent                                      ; 2                                                                                                                                                                                                              ; FooterComponent
-  
-# CMS Paragraph Component (Contact information)
-INSERT_UPDATE CMSParagraphComponent                ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; &componentRef
-                                                   ;                            ; ContactInfo                                          ; Contact information                                                                                                                                                                                            ; ContactInfo
-                                                   ;                            ; welcomeMessage                                       ; Lorem                                                                                                                                                                                                          ; welcomeMessage
-  
-# CMS VariantSelector Components
-INSERT_UPDATE ProductVariantSelectorComponent      ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; &componentRef
-                                                   ;                            ; VariantSelector                                      ; Product Variant Selector                                                                                                                                                                                       ; VariantSelector
-  
-# CMS ProductAddToCart Components
-INSERT_UPDATE ProductAddToCartComponent;$contentCV[unique=true];uid[unique=true];name;actions(&actionRef);&componentRef
-;;AddToCart;Product Add To Cart;PickUpInStoreAction,AddToCartAction,ShareOnSocialNetworkAction;AddToCart
-# CMS AddToCart Action
-INSERT_UPDATE AddToCartAction;$contentCV[unique=true];uid[unique=true];url;name;restrictions(uid,$contentCV);&actionRef
-;;AddToCartAction;/cart/add;Product Add To Cart Action;ActionRestriction;AddToCartAction
-INSERT_UPDATE ListAddToCartAction;$contentCV[unique=true];uid[unique=true];url;name;restrictions(uid,$contentCV);&actionRef
-;;ListAddToCartAction;/cart/add;Product Add To Cart Action;ActionRestriction;ListAddToCartAction
-INSERT_UPDATE ListPickUpInStoreAction;$contentCV[unique=true];uid[unique=true];url;name;restrictions(uid,$contentCV);&actionRef
-;;ListPickUpInStoreAction;/store-pickup/{productCode}/pointOfServices;Pickup in Store Action;ActionRestriction;ListPickUpInStoreAction
-# CMS PickUpInStoreAction Action
-INSERT_UPDATE PickUpInStoreAction;$contentCV[unique=true];uid[unique=true];url;name;restrictions(uid,$contentCV);&actionRef
-;;PickUpInStoreAction;/store-pickup/{productCode}/pointOfServices;Pickup in Store Action;ActionRestriction;PickUpInStoreAction
-# CMS ShareOnSocialNetwork Action
-INSERT_UPDATE ShareOnSocialNetworkAction;$contentCV[unique=true];uid[unique=true];url;name;restrictions(uid,$contentCV);&actionRef
-;;ShareOnSocialNetworkAction;/;Share On Social Network Action;ActionRestriction;ShareOnSocialNetworkAction
-# CMS Action Restrictions
-INSERT_UPDATE CMSActionRestriction;$contentCV[unique=true];uid[unique=true];name;
-;;ActionRestriction;A CMSAction restriction;
- 
-# CMS ProductReferences Components
-INSERT_UPDATE ProductReferencesComponent           ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; productReferenceTypes(code)                                                                                                                                                                                                                  ; maximumNumberProducts                                                                                                                                                            ; &componentRef
-                                                   ;                            ; accessories                                          ; Accessories                                                                                                                                                                                                    ; ACCESSORIES                                                                                                                                                                                                                                  ; 5                                                                                                                                                                                ; accessories
-                                                   ;                            ; CrossSelling                                         ; Cross Selling                                                                                                                                                                                                  ; CROSSELLING                                                                                                                                                                                                                                  ; 5                                                                                                                                                                                ; CrossSelling
-                                                   ;                            ; Others                                               ; Others                                                                                                                                                                                                         ; OTHERS                                                                                                                                                                                                                                       ; 5                                                                                                                                                                                ; Others
-                                                   ;                            ; Similar                                              ; Similar                                                                                                                                                                                                        ; SIMILAR                                                                                                                                                                                                                                      ; 5                                                                                                                                                                                ; Similar
-  
-  
-  
-# CMS PurchasedCategorySuggestion Components
-INSERT_UPDATE PurchasedCategorySuggestionComponent ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; productReferenceTypes(code)                                                                                                                                                                                                                  ; maximumNumberProducts                                                                                                                                                            ; filterPurchased                          ; category(code, $productCV)                  ; &componentRef
-#                                                   ;                            ; PurchasedCategorySuggestions                         ; Purchased Category Suggestions                                                                                                                                                                                 ; OTHERS                                                                                                                                                                                                                                       ; 10                                                                                                                                                                               ; true                                     ; 100                                         ; PurchasedCategorySuggestions
-  
-# CMS CartSuggestion Components
-INSERT_UPDATE CartSuggestionComponent              ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; productReferenceTypes(code)                                                                                                                                                                                                                  ; maximumNumberProducts                                                                                                                                                            ; filterPurchased                          ; &componentRef
-                                                   ;                            ; CartSuggestions                                      ; Cart Suggestions                                                                                                                                                                                               ; ACCESSORIES,SIMILAR                                                                                                                                                                                                                          ; 20                                                                                                                                                                               ; true                                     ; CartSuggestions
-  
-# CMS SearchBox Components
-INSERT_UPDATE SearchBoxComponent                   ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; &componentRef
-                                                   ;                            ; SearchBox                                            ; Search Box                                                                                                                                                                                                     ; SearchBox
+## SearchBox slot: SearchBox
+INSERT_UPDATE SearchBoxComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+;;SearchBox;Search Box;SearchBox
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(&componentRef)
+;;SearchBoxSlot;SearchBox
+
+INSERT_UPDATE BreadcrumbComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+;;breadcrumbComponent;Breadcrumb CMS Component;breadcrumbComponent
+
 # CMS Language and Currency Component
 INSERT_UPDATE LanguageCurrencyComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
 ;;LangCurrencyComponent;Language and Currency Component;LangCurrencyComponent
-INSERT_UPDATE ProductRefinementComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
-;;RefinementFacetComponent;Product Refinement Facet Component;RefinementFacetComponent
-INSERT_UPDATE CMSProductListComponent;$contentCV[unique=true];uid[unique=true];name;actions(uid,$contentCV);&componentRef
-;;ProductList;Product List Component;ListPickUpInStoreAction,ListAddToCartAction;ProductList
-INSERT_UPDATE ProductGridComponent;$contentCV[unique=true];uid[unique=true];name;actions(uid,$contentCV);&componentRef
-;;ProductGrid;Product Grid Component;ListPickUpInStoreAction,ListAddToCartAction;ProductGrid
-INSERT_UPDATE SearchResultsListComponent;$contentCV[unique=true];uid[unique=true];name;actions(uid,$contentCV);&componentRef
-;;SearchResultsList;Search Result List Component;ListPickUpInStoreAction,ListAddToCartAction;SearchResultsList
-INSERT_UPDATE SearchResultsListComponent;$contentCV[unique=true];uid[unique=true];name;actions(uid,$contentCV);&componentRef
-;;SearchResultsGrid;Search Result Grid Component;ListPickUpInStoreAction,ListAddToCartAction;SearchResultsGrid
   
-# Content Slots
-INSERT_UPDATE ContentSlot                          ; $contentCV[unique=true]    ; uid[unique=true]                                     ; cmsComponents(&componentRef)
-                                                   ;                            ; SiteLogoSlot                                         ; SiteLogoComponent
-                                                   ;                            ; HomepageNavLinkSlot                                  ; HomepageNavLink
-                                                   ;                            ; MiniCartSlot                                         ; MiniCart
-                                                   ;                            ; NavigationBarSlot                                    ; NavBarComponent,breadcrumbComponent
-                                                   ;                            ; TabsSlot                                             ; TabPanelContainer
-                                                   ;                            ; FooterSlot                                           ; FooterComponent
-                                                   ;                            ; HeaderLinksSlot                                      ; ContactInfo
-                                                   ;                            ; SearchBoxSlot                                        ; SearchBox,LangCurrencyComponent
-                                                   ;                            ; VariantSelectorSlot                                  ; VariantSelector
-                                                   ;                            ; AddToCartSlot                                        ; AddToCart
-                                                   ;                            ; UpSellingSlot                                        ; Similar
-                                                   ;                            ; CrossSellingSlot                                     ; accessories
-                                                   ;                            ; SuggestionSlot                                       ; CartSuggestions
-                                                   ;                            ;ProductLeftRefinements                                ;RefinementFacetComponent
-  
-# Category Pages
-INSERT_UPDATE CategoryPage                         ; $contentCV[unique=true]    ; uid[unique=true]                                     ; name                                                                                                                                                                                                           ; masterTemplate(uid,$contentCV)                                                                                                                                                                                                               ; defaultPage                                                                                                                                                                      ; approvalStatus(code)[default='approved'] ; previewImage(code, $contentCV)
-                                                   ;                            ; Stuff                                                ; Stuff                                                                                                                                                                                                          ; ProductListPageTemplate                                                                                                                                                                                                                      ; false                                                                                                                                                                            ;                                          ;
-                                                   ;                            ; Clothes                                              ; Clothes                                                                                                                                                                                                        ; ProductListPageTemplate                                                                                                                                                                                                                      ; false                                                                                                                                                                            ;                                          ;
-  
-# Update CMS Footer Component with Nav Nodes
-INSERT_UPDATE FooterComponent                      ; $contentCV[unique=true]    ; uid[unique=true]                                     ; navigationNodes(&nodeRef)
-                                                   ;                            ; FooterComponent                                      ;
- 
-# CMS Navigation Nodes #
-INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;children(uid,$contentCV)[mode=append]
-;root;;root;;
+
+##########Navigation Link
+## level 0 -- root ##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);children(uid,$contentCV)[mode=append];links(uid, $contentCV);&nodeRef;
+;root;;root;;;;root;
+
+## level 1 -- Site Root: child of root ##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);children(uid,$contentCV)[mode=append];links(uid, $contentCV);&nodeRef;
+;SiteRootNode;;SiteRootNode;root;;;SiteRootNode;
+
+## level 2 -- Fossil Site: child of SiteRootNode ##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);children(uid,$contentCV)[mode=append];links(uid, $contentCV);&nodeRef;
+;FossilNavNode;;Training Merchandise Site;SiteRootNode;;HomepageNavLink;FossilNavNode
+
+## level 3 -- My Account, Order, Categories, Footer Pages: children of FossilNavNode ##
 INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
-;SiteRootNode;;SiteRootNode;root;;SiteRootNode
-#;MerchandiseNavNode;;hybris Merchandise Site;SiteRootNode;HomepageNavLink;MerchandiseNavNode
-#;ClothesNavNode;;Clothes Links;MerchandiseNavNode;ClothesCategoryLink;ClothesNavNode
-#;StuffNavNode;;Stuff Links;MerchandiseNavNode;StuffCategoryLink;StuffNavNode
-;FossilNavNode;;Training Merchandise Site;SiteRootNode;HomepageNavLink;FossilNavNode
+;MyAccountFosNavNode;;My Account;SiteRootNode;AccountProfileLink,AccountPersonalDetailsLink;MyAccountFosNavNode
+#;OrderNavNode;;Order;FossilNavNode;OrderNavNode
+#;FossilCategoryHeaderNavNode;;Categories;FossilNavNode;FossilCategoryHeaderNavNode
+#;FossilFooterNavNode;;Footer Pages;FossilNavNode;FossilFooterNavNode
+#;HeaderNavNode;;Header Pages;FossilNavNode;HeaderNavNode
+
+##---- level 4. children of My Account Nav Node----##
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
+
+
+
+
+
+INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;&linkRef;&componentRef;target(code)[default='sameWindow'];;                         
+#;;AccountHomeLink;Account Home Link;/my-account;AccountHomeLink;AccountHomeLink;;;;
+;;AccountProfileLink;AccountProfileLink;/my-account/profile;AccountProfileLink;AccountProfileLink;;;;
+;;AccountPersonalDetailsLink;AccountPersonalDetailsLink;/my-account/profile;AccountPersonalDetailsLink;AccountPersonalDetailsLink;;;;
+
+INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
 ;MenNavNode;;Men links;FossilNavNode;;MenNavNode
 ;MenWatchesNavNode;;Men watches links;MenNavNode;MenCategoryLink;MenWatchesNavNode
 ;MenAccessoriesNavNode;;Men accessories links;MenNavNode;WalletCategoryLink,JewelryCategoryLink;MenAccessoriesNavNode
@@ -221,24 +122,15 @@ INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;pa
 ;JewelryNavNode;;Jewelry links;FossilNavNode;JewelryCategoryLink;JewelryNavNode
 
 
-;AcceleratorNavNode;;Accelerator Pages;FossilNavNode;AboutAcceleratorLink,FAQLink;AcceleratorNavNode
-;HybrisNavNode;;Hybris Pages;FossilNavNode;AboutHybrisLink,ContactUsLink;HybrisNavNode
-;FollowUsNavNode;;Follow Us Pages;FossilNavNode;AgileCommerceBlogLink,LinkedInLink,FacebookLink,TwitterLink;FollowUsNavNode
-;AccountLeftNavNode;;Your Account;SiteRootNode;AccountProfileLink,AccountAddressBookLink,AccountPaymentDetailsLink,AccountOrderHistoryLink;AccountLeftNavNode
-;AccountProfileNavNode;;Profile;SiteRootNode;AccountPersonalDetailsLink,AccountUpdatePasswordLink;AccountProfileNavNode
-;AccountAddressBookNavNode;;Address Book;SiteRootNode;AccountManageAddressLink;AccountAddressBookNavNode
-;AccountPaymentDetailsNavNode;;Address Book;SiteRootNode;AccountManagePaymentDetailsLink;AccountPaymentDetailsNavNode
-;AccountOrderHistoryNavNode;;Order History;SiteRootNode;AccountViewOrderHistoryLink;AccountOrderHistoryNavNode
-
 # Navigation Bar Component
 INSERT_UPDATE NavigationBarComponent;$contentCV[unique=true];uid[unique=true];navigationNode(&nodeRef);dropDownLayout(code)
 #;;ClothesBarComponent;ClothesNavNode
 #;;StuffBarComponent;StuffNavNode
 ;;MenBarComponent;MenNavNode
 ;;WomenBarComponent;WomenNavNode
-;; SmartwatchBarComponent;SmartwatchNavNode
+;;SmartwatchBarComponent;SmartwatchNavNode
 ;;WalletBarComponent ;WalletNavNode
-;; JewelryBarComponent;JewelryNavNode
+;;JewelryBarComponent;JewelryNavNode
                               	
 # Simple Content Pages
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];linkComponents(&linkRef)
@@ -280,8 +172,16 @@ INSERT_UPDATE ContentSlotForPage                   ; $contentCV[unique=true]    
                                                    ;                            ; Section3-Homepage                                    ; Section3                                                                                                                                                                                                       ;                                                                                                                                                                                                                                              ; Section3Slot-Homepage
                                                    ;                            ; Section4-Homepage                                    ; Section4                                                                                                                                                                                                       ;                                                                                                                                                                                                                                              ; Section4Slot-Homepage
                                                    ;                            ; Section5-Homepage                                    ; Section5                                                                                                                                                                                                       ;                                                                                                                                                                                                                                              ; Section5Slot-Homepage
+INSERT_UPDATE JspIncludeComponent;$contentCV[unique=true];uid[unique=true];name;page;actions(uid,$contentCV);&componentRef
+;;ProductReviewsTabComponent;Product Reviews Tab;productReviewsTab.jsp;;ProductReviewsTabComponent
+
+
+INSERT_UPDATE CMSTabParagraphContainer;$contentCV[unique=true];uid[unique=true];name;visible;simpleCMSComponents(uid, $contentCV);&componentRef
+;;TabPanelContainer;Tab container;true;ProductReviewsTabComponent;TabPanelContainer
   
-  
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(&componentRef)
+;;Tabs-ProductDetails;TabPanelContainer
+   
 ###### Merchandise Search Results Page ######
   
   

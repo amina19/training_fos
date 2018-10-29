@@ -21,8 +21,8 @@ $lang=en
 
 # Update allProducts with localisations
 UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
-;0001;;MEN;GEN 4 SMARTWATCH - Q VENTURE HR SMOKE STAINLESS STEEL;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
-;0011;;WOMEN;HYBRID SMARTWATCH - FOSSIL X MOVEMBER BROWN LEATHER;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
-;0021;;SMARTWATCHES;GEN 4 SMARTWATCH - Q VENTURE HR BLUSH LEATHER;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
-;0031;;WALLETS;LOGAN RFID ZIP AROUND CLUTCH;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
-;0041;;JEWELRY;HEART ROSE GOLD-TONE STAINLESS STEEL NECKLACE;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0001;;GEN 4 SMARTWATCH - Q VENTURE HR SMOKE STAINLESS STEEL;;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0011;;HYBRID SMARTWATCH - FOSSIL X MOVEMBER BROWN LEATHER;;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0021;;GEN 4 SMARTWATCH - Q VENTURE HR BLUSH LEATHER;;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0031;;LOGAN RFID ZIP AROUND CLUTCH;;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"
+;0041;;HEART ROSE GOLD-TONE STAINLESS STEEL NECKLACE;;"<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>"

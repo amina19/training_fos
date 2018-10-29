@@ -617,4 +617,21 @@
 	<bean id="trainingBrandCategoryNameValueProvider" parent="abstractCategoryNameValueProvider">
 		<property name="categorySource" ref="trainingBrandCategorySource" />
 	</bean>
+	<bean id="reviewAverageRatingValueProvider"
+	      class="com.training.facades.search.solrfacetsearch.provider.impl.ReviewAverageRatingValueProvider"
+	      parent="abstractPropertyFieldValueProvider" >
+		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
+		<property name="i18nService" ref="i18nService"/>
+		<property name="commonI18NService" ref="commonI18NService"/>
+	</bean>
+	<bean id="numberOfReviewsValueProvider"
+	      class="com.training.facades.search.solrfacetsearch.provider.impl.NumberOfReviewsValueProvider"
+	      parent="abstractPropertyFieldValueProvider" >
+		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
+		<property name="i18nService" ref="i18nService"/>
+		<property name="commonI18NService" ref="commonI18NService"/>
+	</bean>
+	
+	
+	
 </beans>

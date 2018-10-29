@@ -42,9 +42,9 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpg'];altText;&imageRef
 #;;Elec_290x45_HomeDeliveryBanner_EN_01.gif;$siteResource/images/banners/site/Elec_290x45_HomeDeliveryBanner_EN_01.gif;;"Order before 6pm for next day delivery";Elec_290x45_HomeDeliveryBanner_EN_01.gif
 ;;carousel_1.jpeg;$siteResource/images/banners/carousel_1.jpeg;;;carousel_1.jpeg
-;;carousel_3.jpg;$siteResource/images/banners/carousel_3.jpg;;;carousel_3.jpg
-;;carousel_4.jpg;$siteResource/images/banners/carousel_4.jpg;;;carousel_4.jpg
-;;carousel_5.jpg;$siteResource/images/banners/carousel_5.jpg;;;carousel_5.jpg
+;;carousel_3.jpg;$siteResource/images/banners/carousel_3.jpeg;;;carousel_3.jpg
+;;carousel_4.jpg;$siteResource/images/banners/carousel_4.jpeg;;;carousel_4.jpg
+;;carousel_5.jpg;$siteResource/images/banners/carousel_5.jpeg;;;carousel_5.jpg
 
 INSERT_UPDATE BannerComponent;$contentCV[unique=true];uid[unique=true];headline[lang=$lang];$picture[lang=$lang];content[lang=$lang]
 ;;CarouselWatchesBanner;HEADLINE;carousel_1.jpg;"**content**"
@@ -108,7 +108,9 @@ INSERT_UPDATE CMSParagraphComponent;$contentCV[unique=true];uid[unique=true];con
 <li>You may have been too specific - please broaden your search by using fewer keywords</li>
 <li>Browse our products by selecting a category above</li>
 </ul>"
-   
+  
+INSERT_UPDATE JspIncludeComponent;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
+;;ProductReviewsTabComponent;"Reviews"  
 ###### Hybris Cart Page ######
    
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpg'];altText
