@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="json-taglib-0.4.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/custom/training/trainingstorefront/web/webroot/WEB-INF/lib/json-taglib-0.4.1.jar!/"/>
+	</lib>
+	<lib name="jsoup-1.6.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/custom/training/trainingstorefront/web/webroot/WEB-INF/lib/jsoup-1.6.1.jar!/"/>
+	</lib>
+	<lib name="jstl-impl-1.2.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/custom/training/trainingstorefront/web/webroot/WEB-INF/lib/jstl-impl-1.2.jar!/"/>
+	</lib>
+	<lib name="owasp-java-html-sanitizer-20160924.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/custom/training/trainingstorefront/web/webroot/WEB-INF/lib/owasp-java-html-sanitizer-20160924.1.jar!/"/>
+	</lib>
+	<lib name="wro4j-core-1.7.9.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/custom/training/trainingstorefront/web/webroot/WEB-INF/lib/wro4j-core-1.7.9.jar!/"/>
+	</lib>
+	<lib name="resources" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/custom/training/trainingstorefront/resources"/>
+	</lib>
+</component>
